@@ -1,0 +1,10 @@
+﻿CREATE TABLE branch_test3
+(
+    col1 int NOT NULL
+)
+WITH
+(
+    DISTRIBUTION = ROUND_ROBIN,
+    CLUSTERED COLUMNSTORE INDEX
+)
+GO
